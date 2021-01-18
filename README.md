@@ -21,8 +21,8 @@ see [ReactNativeComponentDemos][0]
 
 ## Usage
 
-Install the GesturePassword from npm with `npm install react-native-smart-gesture-password-angeloslex --save`.
-Then, require it from your app's JavaScript files with `import GesturePassword from 'react-native-smart-gesture-password-angeloslex'`.
+Install the GesturePassword from npm with `npm install react-native-smart-gesture-password-hunonic --save`.
+Then, require it from your app's JavaScript files with `import GesturePassword from 'react-native-smart-gesture-password-hunonic'`.
 
 ```js
 import React, {Component,} from 'react'
