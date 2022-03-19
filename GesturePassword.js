@@ -1,6 +1,6 @@
 /*
  * A smart gesture password locker for react-native apps
- * https://github.com/react-native-component/react-native-smart-sudoku-grid/
+ * https://g...content-available-to-author-only...b.com/react-native-component/react-native-smart-sudoku-grid/
  * Released under the MIT license
  * Copyright (c) 2016 react-native-component <moonsunfall@aliyun.com>
  */
@@ -23,7 +23,10 @@ const styles = StyleSheet.create({
     }
 })
 
-const {width: deviceWidth, height: deviceHeight} = Dimensions.get('window')
+const {width, height} = Dimensions.get('window')
+let deviceWidth = width;
+let deviceHeight = height;
+
 
 export default class GesturePassword extends Component {
 
@@ -72,6 +75,10 @@ export default class GesturePassword extends Component {
             arrows: [],
         }
 
+        const {width, height} = Dimensions.get('window')
+        deviceWidth = width;
+        deviceHeight = height;
+
         this._gestureAreaMarginHorizontal = (deviceWidth - props.gestureAreaLength) / 2
         this._gestureAreaLeft = 0
         this._gestureAreaTop = 0
@@ -80,6 +87,8 @@ export default class GesturePassword extends Component {
         this._currentLine = null
         this._timer = null
         this._sequence = []
+
+
     }
 
     componentWillMount() {
